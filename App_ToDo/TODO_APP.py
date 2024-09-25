@@ -79,7 +79,7 @@ def atualizar_tarefa(nova_tarefa):
         if isinstance(widget, tk.Label):
             widget.configure(text=nova_tarefa)
     entry_tarefa.delete(0, tk.END)
-#Problema: caso o usuário aperte o botão de editar tarefa, e não a atualizar e apaga-la. O programa para de funcionar.
+
 
 #Função Delete tarefa
 def delete_task(frame_lista_tarefas):
@@ -168,5 +168,3 @@ forma_interior.bind("<Configure>", lambda e: forma.configure(scrollregion=forma.
 #------------------------
 #Criando o main loop da janela
 janela_principal.mainloop()
-
-#Criar um BD para este aplicativo
